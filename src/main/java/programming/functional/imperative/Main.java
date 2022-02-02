@@ -2,6 +2,7 @@ package programming.functional.imperative;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static programming.functional.imperative.Main.Gender.FEMALE;
 import static programming.functional.imperative.Main.Gender.MALE;
@@ -29,6 +30,12 @@ public class Main {
         for(Person female : females) {
             System.out.println(female);
         }
+        System.out.println("Declarative approach");
+        // Declarative approach
+        List<Person> females2 = people.stream()
+                .filter(person -> FEMALE.equals(person.gender))
+                .collect(Collectors.toList());
+        females2.forEach(System.out::println);
     }
 
     static class Person{

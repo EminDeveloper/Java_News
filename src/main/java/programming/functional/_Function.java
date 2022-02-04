@@ -27,4 +27,8 @@ public class _Function {
     static int increment(int number){
         return number + 1;
     }
+
+    static int incrementByOneAndMultiply(int number, int numToMultiplyBy){
+        return (number + 1) * numToMultiplyBy;
+    }
 }

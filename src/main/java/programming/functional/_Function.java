@@ -1,5 +1,6 @@
 package programming.functional;
 
+import java.util.function.BiFunction;
 import java.util.function.Function;
 
 public class _Function {
@@ -27,6 +28,9 @@ public class _Function {
     static int increment(int number){
         return number + 1;
     }
+
+    BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyBiFunction =
+            (numberToIncrementByOne, numberToMultiplyBy) -> (numberToIncrementByOne + 1) * numberToMultiplyBy;
 
     static int incrementByOneAndMultiply(int number, int numToMultiplyBy){
         return (number + 1) * numToMultiplyBy;

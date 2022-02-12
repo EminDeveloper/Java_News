@@ -12,11 +12,11 @@ public class Main {
     public static void main(String[] args) {
 
         List<Person> people = List.of(
-            new Person("John", MALE),
-            new Person("Maria", FEMALE),
-            new Person("Aisha", FEMALE),
-            new Person("Alex", MALE),
-            new Person("Alice", FEMALE)
+            new Person("John2", MALE),
+            new Person("Maria2", FEMALE),
+            new Person("Aisha2", FEMALE),
+            new Person("Alex2", MALE),
+            new Person("Alice2", FEMALE)
         );
 
         // Imperative approach

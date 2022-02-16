@@ -1,6 +1,7 @@
 package streams;
 
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import static streams._iStream.Gender.MALE;
@@ -24,10 +25,15 @@ public class _iStream {
 //                .mapToInt(String::length)
 //                .forEach(System.out::println);
 
-        people.stream()
-                .map(person -> person.gender)
-                .collect(Collectors.toSet())
-                .forEach(System.out::println);
+//        people.stream()
+//                .map(person -> person.gender)
+//                .collect(Collectors.toSet())
+//                .forEach(System.out::println);
+
+        Predicate<Person> personPredicate = person -> FEMALE.equals(person.gender);
+        boolean containsOnlyFemales = people.stream()
+                .noneMatch(personPredicate);
+
     }
 
 

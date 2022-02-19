@@ -1,12 +1,11 @@
-package streams;
+package functional.streams;
 
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
-import static streams._iStream.Gender.MALE;
-import static streams._iStream.Gender.FEMALE;
-import static streams._iStream.Gender.PREFER_NOT_TO_SAY;
+import static functional.streams._iStream.Gender.MALE;
+import static functional.streams._iStream.Gender.FEMALE;
+import static functional.streams._iStream.Gender.PREFER_NOT_TO_SAY;
 
 public class _iStream {
 

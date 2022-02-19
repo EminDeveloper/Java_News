@@ -1,4 +1,4 @@
-package optionals;
+package functional.optionals;
 
 import java.util.Optional;
 import java.util.function.Supplier;

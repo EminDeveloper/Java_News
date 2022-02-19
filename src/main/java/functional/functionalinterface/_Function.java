@@ -1,4 +1,4 @@
-package functionalinterface;
+package functional.functionalinterface;
 
 import java.util.function.BiFunction;
 import java.util.function.Function;

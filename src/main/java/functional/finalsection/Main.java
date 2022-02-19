@@ -1,4 +1,4 @@
-package finalsection;
+package functional.finalsection;
 
 import java.util.function.Consumer;
 

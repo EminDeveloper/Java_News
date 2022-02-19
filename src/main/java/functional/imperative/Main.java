@@ -1,11 +1,11 @@
-package imperative;
+package functional.imperative;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static imperative.Main.Gender.FEMALE;
-import static imperative.Main.Gender.MALE;
+import static functional.imperative.Main.Gender.FEMALE;
+import static functional.imperative.Main.Gender.MALE;
 
 public class Main {
 

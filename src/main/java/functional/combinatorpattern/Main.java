@@ -1,8 +1,6 @@
-package combinatorpattern;
+package functional.combinatorpattern;
 
 import java.time.LocalDate;
-
-import static combinatorpattern.CustomerRegistrationValidator.*;
 
 public class Main {
 
@@ -20,14 +18,14 @@ public class Main {
         // to do if valid store customer db
         //  Using combinator pattern
 
-        ValidationResult result = isEmailValid()
-                .and(isPhoneNumberValid())
-                .and(isAdult())
+        CustomerRegistrationValidator.ValidationResult result = CustomerRegistrationValidator.isEmailValid()
+                .and(CustomerRegistrationValidator.isPhoneNumberValid())
+                .and(CustomerRegistrationValidator.isAdult())
                 .apply(customer);
 
         System.out.println(result);
 
-        if(result != ValidationResult.SUCCESS){
+        if(result != CustomerRegistrationValidator.ValidationResult.SUCCESS){
             throw new IllegalStateException(result.name());
         }
     }

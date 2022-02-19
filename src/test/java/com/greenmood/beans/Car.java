@@ -1,4 +1,4 @@
-package com.greenmood.bean;
+package com.greenmood.beans;
 
 
 public class Car {

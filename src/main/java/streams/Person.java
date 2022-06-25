@@ -3,6 +3,7 @@ package streams;
 public class Person {
 
     private final String name;
+    private final String surname;
     private final int age;
     private final Gender gender;
 
@@ -15,7 +16,11 @@ public class Person {
     public String getName() {
         return name;
     }
-
+    
+    public String getSurname() {
+        return surname;
+    }
+    
     public int getAge() {
         return age;
     }
